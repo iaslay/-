@@ -1,0 +1,127 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Thu Jan  4 20:15:56 2024
+| Host         : lay running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7a35ti
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    58 |
+| Unused register locations in slices containing registers |   168 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            4 |
+|      8 |            8 |
+|     10 |            1 |
+|     12 |           20 |
+|     14 |            5 |
+|    16+ |           20 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             130 |           32 |
+| No           | No                    | Yes                    |              50 |           13 |
+| No           | Yes                   | No                     |              96 |           16 |
+| Yes          | No                    | No                     |             352 |           85 |
+| Yes          | No                    | Yes                    |              86 |           12 |
+| Yes          | Yes                   | No                     |             582 |          102 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------+-----------------------------+-----------------------------+------------------+----------------+
+|      Clock Signal     |        Enable Signal        |       Set/Reset Signal      | Slice Load Count | Bel Load Count |
++-----------------------+-----------------------------+-----------------------------+------------------+----------------+
+|  cnth_reg[31]_i_3_n_0 |                             |                             |                1 |              2 |
+|  sys_clk_IBUF_BUFG    | key_IBUF[0]                 | env/key_[2]_i_1_n_0         |                1 |              2 |
+|  sys_clk_IBUF_BUFG    | key_IBUF[2]                 | env/key_[2]_i_1_n_0         |                1 |              2 |
+|  sys_clk_IBUF_BUFG    | key_IBUF[1]                 | env/key_[2]_i_1_n_0         |                1 |              2 |
+|  sys_clk_IBUF_BUFG    | env/items[3][5]_i_2_n_0     | env/items[3][5]_i_1_n_0     |                1 |              8 |
+|  sys_clk_IBUF_BUFG    | env/number1[3]_i_1_n_0      |                             |                2 |              8 |
+|  sys_clk_IBUF_BUFG    | U2/read_en                  | env/mouse_x[9]_i_1_n_0      |                1 |              8 |
+|  sys_clk_IBUF_BUFG    | env/number2[0]_i_1_n_0      |                             |                4 |              8 |
+|  sys_clk_IBUF_BUFG    | env/items[4][5]_i_2_n_0     | env/items[4][5]_i_1_n_0     |                1 |              8 |
+|  sys_clk_IBUF_BUFG    | env/items[5][5]_i_2_n_0     | env/items[5][5]_i_1_n_0     |                1 |              8 |
+|  sys_clk_IBUF_BUFG    | env/items[1][5]_i_2_n_0     | env/items[1][5]_i_1_n_0     |                1 |              8 |
+|  sys_clk_IBUF_BUFG    | env/items[0][5]_i_2_n_0     | env/items[0][5]_i_1_n_0     |                2 |              8 |
+|  sys_clk_IBUF_BUFG    | U2/read_en                  | sys_rst_n_IBUF              |                3 |             10 |
+|  sys_clk_IBUF_BUFG    | U2/read_en                  | U2/SR[0]                    |                3 |             12 |
+|  cnth_reg[31]_i_3_n_0 | s/nums_count[0][5]_i_1_n_0  | s/sum1                      |                3 |             12 |
+|  cnth_reg[31]_i_3_n_0 | s/nums_count[10][5]_i_1_n_0 | s/sum1                      |                1 |             12 |
+|  cnth_reg[31]_i_3_n_0 | s/nums_count[11][5]_i_1_n_0 | s/sum1                      |                2 |             12 |
+|  cnth_reg[31]_i_3_n_0 | s/nums_count[12][5]_i_1_n_0 | s/sum1                      |                2 |             12 |
+|  cnth_reg[31]_i_3_n_0 | s/nums_count[13][5]_i_1_n_0 | s/sum1                      |                1 |             12 |
+|  cnth_reg[31]_i_3_n_0 | s/nums_count[14][5]_i_1_n_0 | s/sum1                      |                3 |             12 |
+|  cnth_reg[31]_i_3_n_0 | s/nums_count[1][5]_i_1_n_0  | s/sum1                      |                1 |             12 |
+|  cnth_reg[31]_i_3_n_0 | s/nums_count[2][5]_i_1_n_0  | s/sum1                      |                2 |             12 |
+|  cnth_reg[31]_i_3_n_0 | s/nums_count[3][5]_i_1_n_0  | s/sum1                      |                2 |             12 |
+|  cnth_reg[31]_i_3_n_0 | s/nums_count[4][5]_i_1_n_0  | s/sum1                      |                2 |             12 |
+|  cnth_reg[31]_i_3_n_0 | s/nums_count[5][5]_i_1_n_0  | s/sum1                      |                2 |             12 |
+|  cnth_reg[31]_i_3_n_0 | s/nums_count[6][5]_i_1_n_0  | s/sum1                      |                3 |             12 |
+|  cnth_reg[31]_i_3_n_0 | s/nums_count[7][5]_i_1_n_0  | s/sum1                      |                1 |             12 |
+|  cnth_reg[31]_i_3_n_0 | s/nums_count[9][5]_i_1_n_0  | s/sum1                      |                3 |             12 |
+|  cnth_reg[31]_i_3_n_0 | s/nums_count[8][5]_i_1_n_0  | s/sum1                      |                3 |             12 |
+|  cnth_reg[31]_i_3_n_0 | s/nums_count[15][5]_i_1_n_0 | s/sum1                      |                4 |             12 |
+|  sys_clk_IBUF_BUFG    | env/items[7][5]_i_1_n_0     |                             |                1 |             12 |
+|  sys_clk_IBUF_BUFG    | env/items[2][5]_i_1_n_0     |                             |                3 |             12 |
+|  sys_clk_IBUF_BUFG    | env/items[6][5]_i_1_n_0     |                             |                2 |             12 |
+|  sys_clk_IBUF_BUFG    | U1/i[6]_i_1_n_0             | sys_rst_n_IBUF              |                2 |             14 |
+|  sys_clk_IBUF_BUFG    | U2/read_en                  | env/mouse_x[10]_i_1_n_0     |                3 |             14 |
+|  sys_clk_IBUF_BUFG    | U2/i[6]_i_1__0_n_0          | sys_rst_n_IBUF              |                3 |             14 |
+|  cnth_reg[31]_i_3_n_0 | s/I_R_rom_addr_[14]_i_2_n_0 | s/I_R_rom_addr_[14]_i_1_n_0 |                2 |             14 |
+|  sys_clk_IBUF_BUFG    | env/sum_price[14]_i_1_n_0   |                             |                2 |             14 |
+|  cnth_reg[31]_i_3_n_0 | s/R_rom_addr_               | s/sum1                      |                3 |             16 |
+|  sys_clk_IBUF_BUFG    | env/sum_price[14]_i_1_n_0   | env/sum_price[13]_i_1_n_0   |                5 |             16 |
+|  sys_clk_IBUF_BUFG    | U2/D1[15]_i_1_n_0           | sys_rst_n_IBUF              |                2 |             16 |
+|  sys_clk_IBUF_BUFG    | U2/D1[23]_i_1_n_0           | sys_rst_n_IBUF              |                1 |             16 |
+|  sys_clk_IBUF_BUFG    | env/price[5]_i_2_n_0        | env/price[5]_i_1_n_0        |                3 |             16 |
+|  sys_clk_IBUF_BUFG    | env/star_addra[14]_i_1_n_0  |                             |                3 |             18 |
+|  sys_clk_IBUF_BUFG    | env/ena                     |                             |                3 |             20 |
+|  cnth_reg[31]_i_3_n_0 | s/I_R_rom_addr_             | s/I_R_rom_addr_[17]_i_1_n_0 |                6 |             22 |
+|  cnth_reg[31]_i_3_n_0 | s/O_red0                    | s/O_red[3]_i_1_n_0          |                4 |             24 |
+|  sys_clk_IBUF_BUFG    | U1/C1[12]_i_1_n_0           | sys_rst_n_IBUF              |                4 |             26 |
+|  cnth_reg[31]_i_3_n_0 | s/font_R_rom_addr_          | s/sum1                      |                4 |             28 |
+|  sys_clk_IBUF_BUFG    | env/sum_price_[14]_i_1_n_0  |                             |                7 |             30 |
+|  sys_clk_IBUF_BUFG    | env/page                    |                             |               13 |             48 |
+|  sys_clk_IBUF_BUFG    | env/c_count[0]_i_2_n_0      | env/c_count[0]_i_1_n_0      |                7 |             50 |
+|  sys_clk_IBUF_BUFG    | env/c_count1[0]_i_2_n_0     | env/c_count1[0]_i_1_n_0     |                7 |             50 |
+|  cnth_reg[31]_i_3_n_0 |                             | s/cnth[31]_i_1_n_0          |                9 |             64 |
+|  cnth_reg[31]_i_3_n_0 | s/cnth[31]_i_1_n_0          | s/cntv                      |                7 |             64 |
+|  sys_clk_IBUF_BUFG    |                             | sys_rst_n_IBUF              |               20 |             82 |
+|  sys_clk_IBUF_BUFG    |                             |                             |               31 |            128 |
+|  cnth_reg[31]_i_3_n_0 | s/sum1                      |                             |               45 |            170 |
++-----------------------+-----------------------------+-----------------------------+------------------+----------------+
+
+

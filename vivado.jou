@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Jan  4 20:09:13 2024
+# Process ID: 23456
+# Current directory: D:/Vivado_/bighomework
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent24984 D:\Vivado_\bighomework\bighomework.xpr
+# Log file: D:/Vivado_/bighomework/vivado.log
+# Journal file: D:/Vivado_/bighomework\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Vivado_/bighomework/bighomework.xpr
+update_compile_order -fileset sources_1
+set_property -dict [list CONFIG.Coe_File {D:/Vivado_/bighomework/coefile/mouse.coe}] [get_ips blk_mem_gen_0]
+set_property -dict [list CONFIG.Coe_File {D:/Vivado_/bighomework/coefile/image1.coe}] [get_ips blk_mem_gen_1]
+set_property -dict [list CONFIG.Coe_File {D:/Vivado_/bighomework/coefile/image2.coe}] [get_ips blk_mem_gen_2]
+set_property -dict [list CONFIG.Coe_File {D:/Vivado_/bighomework/coefile/image3.coe}] [get_ips blk_mem_gen_3]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1

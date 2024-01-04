@@ -1,0 +1,54 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Jan  4 20:09:13 2024
+# Process ID: 23456
+# Current directory: D:/Vivado_/bighomework
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent24984 D:\Vivado_\bighomework\bighomework.xpr
+# Log file: D:/Vivado_/bighomework/vivado.log
+# Journal file: D:/Vivado_/bighomework\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Vivado_/bighomework/bighomework.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Vivado_/IP_Project'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 914.949 ; gain = 150.898
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Jan  4 20:10:23 2024...
+-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'd:/Vivado_/bighomework/coefile/mouse.coe' provided. It will be converted relative to IP Instance files '../../../../coefile/mouse.coe'
+INFO: [IP_Flow 19-3484] Absolute path of file 'd:/Vivado_/bighomework/coefile/mouse.coe' provided. It will be converted relative to IP Instance files '../../../../coefile/mouse.coe'
+set_property -dict [list CONFIG.Coe_File {D:/Vivado_/bighomework/coefile/mouse.coe}] [get_ips blk_mem_gen_0]
+INFO: [IP_Flow 19-3484] Absolute path of file 'd:/Vivado_/bighomework/coefile/mouse.coe' provided. It will be converted relative to IP Instance files '../../../../coefile/mouse.coe'
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'd:/Vivado_/bighomework/coefile/image1.coe' provided. It will be converted relative to IP Instance files '../../../../coefile/image1.coe'
+INFO: [IP_Flow 19-3484] Absolute path of file 'd:/Vivado_/bighomework/coefile/image1.coe' provided. It will be converted relative to IP Instance files '../../../../coefile/image1.coe'
+set_property -dict [list CONFIG.Coe_File {D:/Vivado_/bighomework/coefile/image1.coe}] [get_ips blk_mem_gen_1]
+INFO: [IP_Flow 19-3484] Absolute path of file 'd:/Vivado_/bighomework/coefile/image1.coe' provided. It will be converted relative to IP Instance files '../../../../coefile/image1.coe'
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'd:/Vivado_/bighomework/coefile/image2.coe' provided. It will be converted relative to IP Instance files '../../../../coefile/image2.coe'
+INFO: [IP_Flow 19-3484] Absolute path of file 'd:/Vivado_/bighomework/coefile/image2.coe' provided. It will be converted relative to IP Instance files '../../../../coefile/image2.coe'
+set_property -dict [list CONFIG.Coe_File {D:/Vivado_/bighomework/coefile/image2.coe}] [get_ips blk_mem_gen_2]
+INFO: [IP_Flow 19-3484] Absolute path of file 'd:/Vivado_/bighomework/coefile/image2.coe' provided. It will be converted relative to IP Instance files '../../../../coefile/image2.coe'
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'd:/Vivado_/bighomework/coefile/image3.coe' provided. It will be converted relative to IP Instance files '../../../../coefile/image3.coe'
+INFO: [IP_Flow 19-3484] Absolute path of file 'd:/Vivado_/bighomework/coefile/image3.coe' provided. It will be converted relative to IP Instance files '../../../../coefile/image3.coe'
+set_property -dict [list CONFIG.Coe_File {D:/Vivado_/bighomework/coefile/image3.coe}] [get_ips blk_mem_gen_3]
+INFO: [IP_Flow 19-3484] Absolute path of file 'd:/Vivado_/bighomework/coefile/image3.coe' provided. It will be converted relative to IP Instance files '../../../../coefile/image3.coe'
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Jan  4 20:11:18 2024] Launched synth_1...
+Run output will be captured here: D:/Vivado_/bighomework/bighomework.runs/synth_1/runme.log
+[Thu Jan  4 20:11:18 2024] Launched impl_1...
+Run output will be captured here: D:/Vivado_/bighomework/bighomework.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Jan  4 20:16:57 2024...
